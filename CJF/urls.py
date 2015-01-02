@@ -8,4 +8,5 @@ urlpatterns = patterns('',
 
     url(r'^admin/', include(admin.site.urls)),
     url(r'^artists/', include('LineUp.urls')),
+    url(r'^presvoiusfestivals/', include('PreviousEvents.urls')),
 )
