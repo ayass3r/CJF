@@ -41,7 +41,7 @@ INSTALLED_APPS = (
     'MailingList',
     'Carousel',
     'PreviousEvents',
-
+    'bootstrap3',
 
 )
 

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{# Load the tag library #}
+{% load bootstrap3 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+  <head>
+    <title>Cairo Jazz Festival - Artists</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+
+		.footer {
+		    clear:both;
+		    width: 640px;
+		    bottom: 0px;
+		    left: 0%;
+		    position: fixed;
+		}
+
+		.item{
+		    background: #333;    
+		    text-align: center;
+		    height: 500px;
+		}
+
+		body
+		{
+		    background: #F7FFFB; 
+		    max-width: 1200px;
+		    text-align: center;
+		    margin-left: auto ;
+		    margin-right: auto ;
+		}
+
+		Topper{
+		  color: #B2B2B2;
+		}
+
+		.artist-img{
+		  display: table-cell; 
+		  vertical-align: middle;
+		}
+
+	</style>
+	
+  </head>
+
+  <body>
+    <div class="marg">
+
+    <div class="Topper">
+                <h1 class="Logo"> 
+          <img src= "Logo.jpg" style= "width:150px;height:100px"/>
+          Cairo Jazz Festival 
+        </div>
+
+        <nav id="cjfNavBar" class="navbar navbar-default" role="navigation">
+          <div class="container" >
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="http://www.reddit.com" target="_blank">Program</a></li>
+                <li><a href="artists.html" target="_self">Artists</a></li>
+                <li><a href="http://www.kaleidoscopereality.tumblr.com" target="_blank">Previous Festivals</a></li>
+                <li><a href="http://www.youtube.com" target="_blank">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+    <div class="container marketing">
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Coldplay</h2>
+          <p class="lead">Coldplay are a British rock band formed in 1996 by lead vocalist Chris Martin and lead guitarist Jonny Buckland at University College London (UCL).</p>
+            <h4> Place Of Origin </h4>
+            <p> London, England </p>
+            <h4> Years Active </h4>
+            <p> 1996 - Present </p>
+          <br>
+          <p> Find them on:&nbsp;&nbsp;
+          <a href="http://www.facebook.com/coldplay"><img class="img-responsive" src="FB-f-Logo__blue_50.png" title="Coldplay's Official Facebook Page"></a>
+          <a href="http://twitter.com/coldplay"><img class="img-responsive" src="Twitter_logo_blue.png" width="55px" height="55px", href="https://twitter.com/coldplay"></a>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="coldplay.jpg" alt="Coldplay">
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p class="pull-left">&copy; 2014 Cairo Jazz Festival &middot;</p>
+      </footer>
+
+    </div>
+  </div>
+  </body>
+</html>
