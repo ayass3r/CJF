@@ -40,6 +40,7 @@ INSTALLED_APPS = (
     'Schedule',
     'MailingList',
     'Carousel',
+    'PreviousEvents',
 
 
 )
