@@ -3,6 +3,7 @@
 
 {# Load the tag library #}
 {% load bootstrap3 %}
+{% load staticfiles %}
 
 {# Load CSS and JavaScript #}
 {% bootstrap_css %}
@@ -42,25 +43,35 @@
 		    margin-right: auto ;
 		}
 
-		Topper{
-		  color: #B2B2B2;
-		}
-
 		.artist-img{
-		  display: table-cell; 
-		  vertical-align: middle;
-		}
+        padding:  2% 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .artist-img-parent 
+    {
+          padding: 2% 0;
+    }
+
+    .social-img 
+    {
+      display: inline-block;
+    }
 
 	</style>
 	
   </head>
 
   <body>
+
+    
+
     <div class="marg">
 
     <div class="Topper">
                 <h1 class="Logo"> 
-          <img src= "Logo.jpg" style= "width:150px;height:100px"/>
+          <img src= "{% static 'LineUp/Logo.jpg' %}" style= "width:150px;height:100px"/>
           Cairo Jazz Festival 
         </div>
 
@@ -91,25 +102,27 @@
 
       <hr class="featurette-divider">
 
+      {% for artist in artists %}
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">Coldplay</h2>
-          <p class="lead">Coldplay are a British rock band formed in 1996 by lead vocalist Chris Martin and lead guitarist Jonny Buckland at University College London (UCL).</p>
+          <h2 class="featurette-heading"> {{artist.ArtistName}} </h2>
+          <p class="lead"> {{artist.ArtistInfo}} </p>
             <h4> Place Of Origin </h4>
-            <p> London, England </p>
+            <p> {{artist.PlaceOfOrigin}} </p>
             <h4> Years Active </h4>
-            <p> 1996 - Present </p>
+            <p> {{artist.YearsRunning}} </p>
           <br>
           <p> Find them on:&nbsp;&nbsp;
-          <a href="http://www.facebook.com/coldplay"><img class="img-responsive" src="FB-f-Logo__blue_50.png" title="Coldplay's Official Facebook Page"></a>
-          <a href="http://twitter.com/coldplay"><img class="img-responsive" src="Twitter_logo_blue.png" width="55px" height="55px", href="https://twitter.com/coldplay"></a>
+          <a href="{{artist.ArtistFacebook}}" target="_blank"><img class="img-responsive social-img" src="{% static 'LineUp/FB-f-Logo__blue_50.png' %}" title="Official Facebook Page"></a>
+          <a href="{{artist.ArtistTwitter}}" target="_blank"><img class="img-responsive social-img" src="{% static 'LineUp/Twitter_logo_blue.png' %}" width="55px" height="55px"></a>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive" src="coldplay.jpg" alt="Coldplay">
+        <div class="col-md-5 artist-img-parent">
+          <img class="featurette-image img-responsive artist-img" src="{% static 'LineUp/'|add:artist.ArtistName|add:'.jpg' %}" alt="{{artist.ArtistName}}">
         </div>
       </div>
 
       <hr>
+      {% endfor %}
 
       <footer>
         <p class="pull-left">&copy; 2014 Cairo Jazz Festival &middot;</p>

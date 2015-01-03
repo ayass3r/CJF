@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from LineUp.models import Artist
 
 # Create your views here.
 def index(request):
-    return render(request, 'LineUp/index.html')
+    artistList = Artist.objects.all().order_by('ArtistName')
+    return render(request, 'LineUp/index.html', {'artists':artistList})

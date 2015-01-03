@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from django.conf.global_settings import MEDIA_URL
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -59,8 +60,8 @@ ROOT_URLCONF = 'CJF.urls'
 
 WSGI_APPLICATION = 'CJF.wsgi.application'
 
-MEDIA_ROOT = '/home/ayass3r/Downloads/CJF/'
-
+#MEDIA_ROOT = '/home/ayass3r/Downloads/CJF/'
+MEDIA_ROOT = '/Users/omar/Desktop/CJF/'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
@@ -92,5 +93,3 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
-
-
