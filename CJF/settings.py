@@ -1,4 +1,4 @@
--"""
+"""
 Django settings for CJF project.
 
 For more information on this file, see
@@ -60,8 +60,8 @@ ROOT_URLCONF = 'CJF.urls'
 
 WSGI_APPLICATION = 'CJF.wsgi.application'
 
-#MEDIA_ROOT = '/home/ayass3r/Downloads/CJF/'
-MEDIA_ROOT = '/Users/omar/Desktop/CJF/'
+MEDIA_ROOT = '/home/ayass3r/Downloads/CJF/'
+#MEDIA_ROOT = '/Users/omar/Desktop/CJF/'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{# Load the tag library #}
+{% load bootstrap3 %}
+{% load staticfiles %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+  <head>
+    <title>Cairo Jazz Festival - Previous Events</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+
+		.footer {
+		    clear:both;
+		    width: 640px;
+		    bottom: 0px;
+		    left: 0%;
+		    position: fixed;
+		}
+
+		.item{
+		    background: #333;    
+		    text-align: center;
+		    height: 500px;
+		}
+
+		body
+		{
+		    background: #F7FFFB; 
+		    max-width: 1200px;
+		    text-align: center;
+		    margin-left: auto ;
+		    margin-right: auto ;
+		}
+
+/*		.artist-img{
+        padding:  2% 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .artist-img-parent 
+    {
+          padding: 2% 0;
+    }
+
+    .social-img 
+    {
+      display: inline-block;
+    } */
+
+	</style>
+	
+  </head>
+
+  <body>
+
+    
+
+    <div class="marg">
+
+    <div class="Topper">
+                <h1 class="Logo"> 
+          <img src= "{% static 'LineUp/Logo.jpg' %}" style= "width:150px;height:100px"/>
+          Cairo Jazz Festival 
+        </div>
+
+        <nav id="cjfNavBar" class="navbar navbar-default" role="navigation">
+          <div class="container" >
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Home</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="nav navbar-nav navbar-left">
+                <li><a href="http://www.reddit.com" target="_blank">Program</a></li>
+                <li><a href="artists.html" target="_self">Artists</a></li>
+                <li><a href="http://www.kaleidoscopereality.tumblr.com" target="_blank">Previous Festivals</a></li>
+                <li><a href="http://www.youtube.com" target="_blank">About</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+    <div class="container marketing">
+
+      <hr class="featurette-divider">
+
+   
+
+
+      <footer>
+        <p class="pull-left">&copy; 2014 Cairo Jazz Festival &middot;</p>
+      </footer>
+
+    </div>
+  </div>
+  </body>
+</html>
