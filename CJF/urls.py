@@ -7,5 +7,5 @@ urlpatterns = patterns('',
   
     url(r'^admin/', include(admin.site.urls)),
     url(r'^artists/', include('LineUp.urls')),
-    url(r'^previous/', include('PreviousEvents.urls')),
+    url(r'^home/', include('Carousel.urls')),
 ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
