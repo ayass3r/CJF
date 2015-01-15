@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'Carousel',
     'PreviousEvents',
     'bootstrap3',
+    'fontawesome',
 
 )
 
