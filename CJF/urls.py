@@ -8,4 +8,10 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^artists/', include('LineUp.urls')),
     url(r'^home/', include('Carousel.urls')),
+
 ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+urlpatterns += patterns('django.contrib.flatpages.views',
+    url(r'^aboutus/$', 'flatpage', {'url': '/aboutus/'}, name='Cairo Jazz Festival About Us'),
+    url(r'^contactus/$', 'flatpage', {'url': '/contactus/'}, name='contactus'),
+)
