@@ -14,6 +14,7 @@ urlpatterns = patterns('',
 ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 urlpatterns += patterns('django.contrib.flatpages.views',
-    url(r'^aboutus/$', 'flatpage', {'url': '/aboutus/'}, name='Cairo Jazz Festival About Us'),
-    url(r'^contactus/$', 'flatpage', {'url': '/contactus/'}, name='contactus'),
+    url(r'^aboutus/$', 'flatpage', {'url': '/aboutus/'}, name='Cairo Jazz Festival - About Us'),
+    url(r'^contactus/$', 'flatpage', {'url': '/contactus/'}, name='Cairo Jazz Festival - Contact Us'),
+    url(r'^ourpartners/$', 'flatpage', {'url': '/ourpartners/'}, name='Cairo Jazz Festival - Out Partners'),
 )

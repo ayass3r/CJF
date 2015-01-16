@@ -43,7 +43,6 @@ INSTALLED_APPS = (
     'LineUp',
     'Schedule',
     'Carousel',
-    'PreviousEvents',
     'bootstrap3',
     'fontawesome',
     'SpecialGuests',
