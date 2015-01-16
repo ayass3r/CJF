@@ -8,6 +8,8 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^artists/', include('LineUp.urls')),
     url(r'^home/', include('Carousel.urls')),
+    url(r'^specialguests/', include('SpecialGuests.urls')),
+
 
 ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

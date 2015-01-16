@@ -46,6 +46,7 @@ INSTALLED_APPS = (
     'PreviousEvents',
     'bootstrap3',
     'fontawesome',
+    'SpecialGuests',
 
 )
 

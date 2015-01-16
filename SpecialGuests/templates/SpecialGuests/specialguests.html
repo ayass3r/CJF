@@ -16,8 +16,6 @@
 {% load fontawesome %}
 {% fontawesome_stylesheet %}
 
-
-
 <head>
 
     <meta charset="utf-8">
@@ -26,7 +24,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Cairo Jazz Festival - About Us</title>
+    <title>Cairo Jazz Festival - Special Guests</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -38,19 +36,12 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot;>
 
-    <style type="text/css">
-        h1 {
-            margin: 20px;
-            padding-top: 40px;
-        }
-    </style>
-
 
 </head>
 
 <body>
 
-     <!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -61,7 +52,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/home">
+                <a class="navbar-brand" href="home.html">
                     <img src="{% static 'Carousel/Logo.jpg' %}" style= "width:200px;height:50px;margin-top:-15px" alt="Cairo Jazz Festival" > 
                 </a>
             </div>
@@ -93,66 +84,60 @@
         <!-- /.container -->
     </nav>
 
+   
+    <header class="header-image">
+        <div class="headline">
+            <div class="container">
+                <h1>Don't Miss Out!</h1>
+                <h2></h2>
+            </div>
+        </div>
+    </header>
 
     <!-- Page Content -->
     <div class="container">
 
-        <!-- Introduction Row -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                    About Us
-                </h1>
-                <p>Cairo Jazz Festival is an International festival that aims to widespread mission of Jazz to reach more people & give more exposure to both acts & audience.</p>
-            </div>
+        <hr class="featurette-divider">
+
+        <!-- First Featurette -->
+        <div class="featurette" id="about">
+            <img class="featurette-image img-circle img-responsive pull-right" src="Darren Criss.jpeg" style= "width:500px;height:500px">
+            <h2 class="featurette-heading">Darren Criss
+                <span class="text-muted">He's Totally Awesome</span>
+            </h2>
+            <p class="lead">Darren Criss is an American actor, singer, and songwriter. One of the founding members and co-owners of StarKid Productions, a musical theater company based in Chicago, Illinois, Criss first garnered attention playing the lead role of Harry Potter in StarKid's musical production of A Very Potter Musical.</p>
         </div>
 
-        <!-- Team Members Row -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">Our Team</h2>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center">
-                <img class="img-circle  img-right" src="{% static 'Carousel/Aya.jpg' %}"  style= "width:200px;height:200px" alt="">
-                <h3>Aya Yasser Harb
-                </h3>
-                <p>Web Developer</p>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center">
-                <img class="img-circle img-center" src="{% static 'Carousel/Omar.jpg' %}" style= "width:200px;height:200px" alt="">
-                <h3>Omar Yasser Nawar
-                </h3>
-                <p>Web Developer</p>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center">
-                <img class="img-circle img-center" src="http://placehold.it/200x200" alt="">
-                <h3>Third Person
-                </h3>
-                <p>Not Awesome</p>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center">
-                <img class="img-circle img-center" src="{% static 'Carousel/Aya.jpg' %}" style= "width:200px;height:200px"  =  alt="">
-                <h3>Aya Yasser Harb
-                </h3>
-                <p>Web Developer</p>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center">
-                <img class="img-circle img-center" src="{% static 'Carousel/Omar.jpg' %}" style= "width:200px;height:200px" alt="">
-                <h3>Omar Yasser Nawar
-                </h3>
-                <p>Web Developer</p>
-            </div>
-            <div class="col-lg-3 col-sm-6 text-center">
-                <img class="img-circle img-center" src="http://placehold.it/200x200" alt="">
-                <h3>Third Person
-                </h3>
-                <p>Web Developer</p>
-            </div>
+        <hr class="featurette-divider">
+
+        <!-- Second Featurette -->
+        <div class="featurette" id="about">
+            <img class="featurette-image img-circle img-responsive pull-left" src="Darren Criss.jpeg" style= "width:500px;height:500px">
+            <h2 class="featurette-heading">Darren Criss
+                <span class="text-muted">He's Totally Awesome</span>
+            </h2>
+            <p class="lead">Darren Criss is an American actor, singer, and songwriter. One of the founding members and co-owners of StarKid Productions, a musical theater company based in Chicago, Illinois, Criss first garnered attention playing the lead role of Harry Potter in StarKid's musical production of A Very Potter Musical.</p>
         </div>
 
-        <hr>
+        <hr class="featurette-divider">
 
-        <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <!-- Third Featurette -->
+        <div class="featurette" id="about">
+            <img class="featurette-image img-circle img-responsive pull-right" src="Darren Criss.jpeg" style= "width:500px;height:500px">
+            <h2 class="featurette-heading">Darren Criss
+                <span class="text-muted">He's Totally Awesome</span>
+            </h2>
+            <p class="lead">Darren Criss is an American actor, singer, and songwriter. One of the founding members and co-owners of StarKid Productions, a musical theater company based in Chicago, Illinois, Criss first garnered attention playing the lead role of Harry Potter in StarKid's musical production of A Very Potter Musical.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <hr class="featurette-divider">
+
+    
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
         <div class="container">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -172,14 +157,25 @@
         </div>
         <!-- /.container -->
     </nav>
-    </div>
-    <!-- /.container -->
+
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap..js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script language="JavaScript" type="text/javascript">
+     $(document).ready(function(){
+      $('.carousel').carousel({
+        interval: 5000 //changes the speed
+      })
+     });
+    </script>
+
+    
 
 </body>
 
