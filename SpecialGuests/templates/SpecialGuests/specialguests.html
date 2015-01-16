@@ -16,6 +16,9 @@
 {% load fontawesome %}
 {% fontawesome_stylesheet %}
 
+
+<link rel="stylesheet" type="text/css" href="{% static 'SpecialGuests/specialguests.css' %}" />
+
 <head>
 
     <meta charset="utf-8">
@@ -35,6 +38,9 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot;>
+
+    
+
 
 
 </head>
@@ -97,44 +103,27 @@
     <!-- Page Content -->
     <div class="container">
 
+        {% for Artist in artists %}
+        {% if not forloop.first %}
         <hr class="featurette-divider">
-
-        <!-- First Featurette -->
+        {% endif %}
         <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="Darren Criss.jpeg" style= "width:500px;height:500px">
-            <h2 class="featurette-heading">Darren Criss
-                <span class="text-muted">He's Totally Awesome</span>
+            <img class="featurette-image img-circle img-responsive pull-right" src="{% static 'SpecialGuests/'|add:Artist.ArtistName|add:'.jpg' %}" style= "width:500px;height:500px">
+            <h2 class="featurette-heading">{{Artist.ArtistName}}
             </h2>
-            <p class="lead">Darren Criss is an American actor, singer, and songwriter. One of the founding members and co-owners of StarKid Productions, a musical theater company based in Chicago, Illinois, Criss first garnered attention playing the lead role of Harry Potter in StarKid's musical production of A Very Potter Musical.</p>
+            <p class="lead"> {{Artist.ArtistInfo}} </p>
+            <h2> Place Of Origin </h2>
+            <p> {{Artist.PlaceOfOrigin}} </p>
+            <h2> Years Active </h2>
+            <p> {{Artist.YearsRunning}} </p>
+          <br>
+          <p><h2> Find them on:
+            <a href="{{artist.ArtistTwitter}}"><i class="fa fa-twitter"></i></a>
+            <a href="{{artist.ArtistFacebook}}"><i class="fa fa-facebook"></i></a></li>
+        </h2></p>
         </div>
 
-        <hr class="featurette-divider">
-
-        <!-- Second Featurette -->
-        <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-left" src="Darren Criss.jpeg" style= "width:500px;height:500px">
-            <h2 class="featurette-heading">Darren Criss
-                <span class="text-muted">He's Totally Awesome</span>
-            </h2>
-            <p class="lead">Darren Criss is an American actor, singer, and songwriter. One of the founding members and co-owners of StarKid Productions, a musical theater company based in Chicago, Illinois, Criss first garnered attention playing the lead role of Harry Potter in StarKid's musical production of A Very Potter Musical.</p>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- Third Featurette -->
-        <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="Darren Criss.jpeg" style= "width:500px;height:500px">
-            <h2 class="featurette-heading">Darren Criss
-                <span class="text-muted">He's Totally Awesome</span>
-            </h2>
-            <p class="lead">Darren Criss is an American actor, singer, and songwriter. One of the founding members and co-owners of StarKid Productions, a musical theater company based in Chicago, Illinois, Criss first garnered attention playing the lead role of Harry Potter in StarKid's musical production of A Very Potter Musical.</p>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <hr class="featurette-divider">
-
-    
+        {% endfor %}
 
 
     <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
