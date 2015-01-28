@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{# Load the tag library #}
+{% load bootstrap3 %}
+{% load staticfiles %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% bootstrap_javascript jquery=1.7 %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+{% load fontawesome %}
+{% fontawesome_stylesheet %}
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cairo Jazz Festival - Program</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'LineUp/LineUp.css' %}" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="home.html">
+                    <img src="{% static 'Carousel/Logo.jpg' %}" style= "width:200px;height:50px;margin-top:-15px" alt="Cairo Jazz Festival" > 
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/program">Program</a>
+                    </li>
+                    <li>
+                        <a href="/specialguests">Special Guests</a>
+                    </li>
+                    <!--li>
+                        <a href="/previous">Previous Festivals</a>
+                    </li-->
+                    <li>
+                        <a href="/ourpartners">Our Partners</a>
+                    </li>
+                    <li>
+                        <a href="/aboutus">About Us</a>
+                    </li>
+                    <li>
+                        <a href="/contactus">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Service Tabs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">CJF 2015 Days</h2>
+            </div>
+            <div class="col-lg-12">
+
+                <ul id="myTab" class="nav nav-tabs nav-justified">
+                    <li class="active"><a href="#day-one" data-toggle="tab">Day One</a></li>
+                    <li class=""><a href="#day-two" data-toggle="tab">Day Two</a></li>
+                    <li class=""><a href="#day-three" data-toggle="tab">Day Three</a></li>
+                    <li class=""><a href="#day-four" data-toggle="tab">Day Four</a></li>
+                </ul>
+
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="day-one">
+                        <!-- Artists Row -->
+                        <div class="row">
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Coldplay-small.jpg" alt="">
+                                </a>
+                                <h3> Coldplay </h3>
+                                <p>Coldplay are a British rock band formed in 1996 by lead vocalist Chris Martin and lead guitarist Jonny Buckland at University College London (UCL).</p>
+                            </div>
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Coldplay-small.jpg" alt="">
+                                </a>
+                                <h3> Coldplay </h3>
+                                <p>Coldplay are a British rock band formed in 1996 by lead vocalist Chris Martin and lead guitarist Jonny Buckland at University College London (UCL).</p>
+                            </div>
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Coldplay-small.jpg" alt="">
+                                </a>
+                                <h3> Coldplay </h3>
+                                <p>Coldplay are a British rock band formed in 1996 by lead vocalist Chris Martin and lead guitarist Jonny Buckland at University College London (UCL).</p>
+                            </div>
+                        </div>
+
+                        <!-- Artists Row -->
+                        <div class="row">
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Coldplay-small.jpg" alt="">
+                                </a>
+                                <h3> Coldplay </h3>
+                                <p>Coldplay are a British rock band formed in 1996 by lead vocalist Chris Martin and lead guitarist Jonny Buckland at University College London (UCL).</p>
+                            </div>
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Coldplay-small.jpg" alt="">
+                                </a>
+                                <h3> Coldplay </h3>
+                                <p>Coldplay are a British rock band formed in 1996 by lead vocalist Chris Martin and lead guitarist Jonny Buckland at University College London (UCL).</p>
+                            </div>
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Coldplay-small.jpg" alt="">
+                                </a>
+                                <h3> Coldplay </h3>
+                                <p>Coldplay are a British rock band formed in 1996 by lead vocalist Chris Martin and lead guitarist Jonny Buckland at University College London (UCL).</p>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <div class="tab-pane fade" id="day-two">
+                        <!-- Artists Row -->
+                        <div class="row">
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Bastille-small.jpg" alt="">
+                                </a>
+                                <h3> Bastille </h3>
+                                <p>Bastille are an English rock band formed in London in 2010. They began as a solo project by singer-songwriter Dan Smith, who later decided to form a band. </p>
+                            </div>
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Bastille-small.jpg" alt="">
+                                </a>
+                                <h3> Bastille </h3>
+                                <p>Bastille are an English rock band formed in London in 2010. They began as a solo project by singer-songwriter Dan Smith, who later decided to form a band. </p>
+                            </div>
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Bastille-small.jpg" alt="">
+                                </a>
+                                <h3> Bastille </h3>
+                                <p>Bastille are an English rock band formed in London in 2010. They began as a solo project by singer-songwriter Dan Smith, who later decided to form a band. </p>
+                            </div>
+                        </div>
+
+                        <!-- Artists Row -->
+                        <div class="row">
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Bastille-small.jpg" alt="">
+                                </a>
+                                <h3> Bastille </h3>
+                                <p>Bastille are an English rock band formed in London in 2010. They began as a solo project by singer-songwriter Dan Smith, who later decided to form a band. </p>
+                            </div>
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Bastille-small.jpg" alt="">
+                                </a>
+                                <h3> Bastille </h3>
+                                <p>Bastille are an English rock band formed in London in 2010. They began as a solo project by singer-songwriter Dan Smith, who later decided to form a band. </p>
+                            </div>
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Bastille-small.jpg" alt="">
+                                </a>
+                                <h3> Bastille </h3>
+                                <p>Bastille are an English rock band formed in London in 2010. They began as a solo project by singer-songwriter Dan Smith, who later decided to form a band. </p>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <div class="tab-pane fade" id="day-three">
+                        <!-- Artists Row -->
+                        <div class="row">
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Paramore-small.jpg" alt="">
+                                </a>
+                                <h3> Paramore </h3>
+                                <p>Paramore is an American rock band from Franklin, Tennessee, formed in 2004. The band currently consists of lead vocalist Hayley Williams, bassist Jeremy Davis, and guitarist Taylor York.</p>
+                            </div>
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Paramore-small.jpg" alt="">
+                                </a>
+                                <h3> Paramore </h3>
+                                <p>Paramore is an American rock band from Franklin, Tennessee, formed in 2004. The band currently consists of lead vocalist Hayley Williams, bassist Jeremy Davis, and guitarist Taylor York.</p>
+                            </div>
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Paramore-small.jpg" alt="">
+                                </a>
+                                <h3> Paramore </h3>
+                                <p>Paramore is an American rock band from Franklin, Tennessee, formed in 2004. The band currently consists of lead vocalist Hayley Williams, bassist Jeremy Davis, and guitarist Taylor York.</p>
+                            </div>
+                        </div>
+
+                        <!-- Artists Row -->
+                        <div class="row">
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Paramore-small.jpg" alt="">
+                                </a>
+                                <h3> Paramore </h3>
+                                <p>Paramore is an American rock band from Franklin, Tennessee, formed in 2004. The band currently consists of lead vocalist Hayley Williams, bassist Jeremy Davis, and guitarist Taylor York.</p>
+                            </div>
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Paramore-small.jpg" alt="">
+                                </a>
+                                <h3> Paramore </h3>
+                                <p>Paramore is an American rock band from Franklin, Tennessee, formed in 2004. The band currently consists of lead vocalist Hayley Williams, bassist Jeremy Davis, and guitarist Taylor York.</p>
+                            </div>
+                            <div class="col-md-4 img-portfolio">
+                                <a href="portfolio-item.html">
+                                    <img class="img-responsive img-hover" src="Paramore-small.jpg" alt="">
+                                </a>
+                                <h3> Paramore </h3>
+                                <p>Paramore is an American rock band from Franklin, Tennessee, formed in 2004. The band currently consists of lead vocalist Hayley Williams, bassist Jeremy Davis, and guitarist Taylor York.</p>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+
+    </div>
+    <!-- /.container -->
+
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-soundcloud"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
