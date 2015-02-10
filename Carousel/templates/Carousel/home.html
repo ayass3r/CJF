@@ -51,6 +51,34 @@
             margin-bottom:auto;
             font-size: 1.5em;
         }
+        .navbar-fixed-top {
+             min-height: 60px;
+             padding-top: 8px;
+        }
+
+        .navbar-fixed-bottom{
+            max-height: 40px;
+        }
+
+        .navbar-nav > li > a {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            line-height: 50px;
+        }
+
+        @media (max-width: 767px) {
+            .navbar-nav > li > a {
+            line-height: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;}
+        }
+        .navbar .nav > li > a, .navbar .nav > li > a:first-letter,
+        .navbar .nav > li.current-menu-item > a,
+        .navbar .nav > li.current-menu-ancestor > a {
+            display:        inline;
+            font-size:      1.1em;
+            padding:        5px 20px;
+        }
     </style>
 
 </head>
@@ -69,7 +97,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/home">
-                    <img src="{% static 'Carousel/Logo.jpg' %}" style= "width:200px;height:50px;margin-top:-15px" alt="Cairo Jazz Festival" > 
+                    <img src="{% static 'Carousel/Logo.jpg' %}" style= "width:200px;height:60px;margin-top:-25px" alt="Cairo Jazz Festival" > 
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -132,7 +160,7 @@
     </header>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container" style="margin-bottom:4em">
 
         <!-- Information and Widgets -->
         <div class="row">
@@ -140,21 +168,26 @@
                 <div class="panel-heading">
                         <h1><b>Cairo Jazz Festival 2015</b></h1>
                     </div>
-                    <div class="panel-body">
-                        <p>Some text 1% of the visitors will actually read! ALL HAIL AWESOMATORS AND AWESOMATERIA!!!!!</p>
-                    </div>
             </div>
             <div class="col-md-4">
-                <div class="panel panel-default">
+                <!--div class="panel panel-default"-->
                     <div id="Twitter">
                         <!--Twitter-->
                         <a class="twitter-timeline"  href="https://twitter.com/cairojazzfest" data-widget-id="514331110361149441">Tweets by @cairojazzfest </a>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                     </div>
-                </div>
+                <!--/div-->
             </div>
             <div class="col-md-4">
-                <div class="panel panel-default">
+                <!--div class="panel panel-default"-->
+                    <!-- INSTANSIVE WIDGET -->
+                    <!--Hashtag-->
+                    <!-- INSTANSIVE WIDGET --><script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/6b414099964b834be954ff6bed160d43e5bd9fb7.html" id="instansive_6b41409996" name="instansive_6b41409996"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+                    <!--script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/57d27a7188c31c562819509b83e0dfbbbd422c9d.html" id="instansive_57d27a7188" name="instansive_57d27a7188"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe-->
+                <!--/div-->
+            </div>
+            <div class="col-md-4">
+                <!--div class="panel panel-default"-->
                     <dic id = "Facebook">
                         <!--JavaScript SDK -->
                         <div id="fb-root"></div>
@@ -165,38 +198,31 @@
                          js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
                          fjs.parentNode.insertBefore(js, fjs);
                         }(document, 'script', 'facebook-jssdk'));</script>
-                        <div class="fb-like-box" data-href="www.facebook.com/cairojazzfest" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false"></div>
-                </div>
+                        <div class="fb-like-box" data-href="https://www.facebook.com/cairojazzfest" data-height="500" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false"></div>
+                <!--/div-->
             </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <!-- INSTANSIVE WIDGET -->
-                    <script src="//instansive.com/widget/js/instansive.js"></script><iframe src="//instansive.com/widgets/57d27a7188c31c562819509b83e0dfbbbd422c9d.html" id="instansive_57d27a7188" name="instansive_57d27a7188"  scrolling="no" allowtransparency="true" class="instansive-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-                </div>
-            </div>
+            
         </div>
         <!-- /.row -->
 
-        <hr>
+        
 
     </div>
     <!-- /.container -->
     
 
-
+    <p><br><br><br></p>
     <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
         <div class="container">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://twitter.com/cairojazzfest" target="_blank" style="target-new: tab;"><i class="fa fa-twitter"></i></a>
+                        <li><a href="https://twitter.com/cairojazzfest" target="_blank" style="target-new: tab;"><i class="fa fa-twitter fa-lg"></i></a>
                         </li>
-                        <li><a href="https://www.facebook.com/cairojazzfest" target="_blank" style="target-new: tab;"><i class="fa fa-facebook"></i></a>
+                        <li><a href="https://www.facebook.com/cairojazzfest" target="_blank" style="target-new: tab;"><i class="fa fa-facebook fa-lg"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a>
+                        <li><a href="http://instagram.com/cairojazzfestival/" target="_blank" style="target-new: tab;"><i class="fa fa-instagram fa-lg" ></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-youtube"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-soundcloud"></i></a>
+                        <li><a href="https://www.youtube.com/channel/UCLX5uKKP-ooL6Xoahb23DCg?&ab_channel=cairojazzfestival" target="_blank" style="target-new: tab;"><i class="fa fa-youtube fa-lg"></i></a>
                         </li>
                 </ul>
             </div>
