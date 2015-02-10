@@ -43,6 +43,34 @@
             margin: 20px;
             padding-top: 40px;
         }
+        .navbar-fixed-top {
+             min-height: 60px;
+             padding-top: 8px;
+        }
+
+        .navbar-fixed-bottom{
+            max-height: 40px;
+        }
+
+        .navbar-nav > li > a {
+            padding-top: 0px;
+            padding-bottom: 0px;
+            line-height: 50px;
+        }
+
+        @media (max-width: 767px) {
+            .navbar-nav > li > a {
+            line-height: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;}
+        }
+        .navbar .nav > li > a, .navbar .nav > li > a:first-letter,
+        .navbar .nav > li.current-menu-item > a,
+        .navbar .nav > li.current-menu-ancestor > a {
+            display:        inline;
+            font-size:      1.1em;
+            padding:        5px 20px;
+        }
     </style>
 
 
@@ -50,7 +78,7 @@
 
 <body>
 
-     <!-- Navigation -->
+    <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -62,7 +90,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/home">
-                    <img src="{% static 'Carousel/Logo.jpg' %}" style= "width:200px;height:50px;margin-top:-15px" alt="Cairo Jazz Festival" > 
+                    <img src="{% static 'Carousel/Logo.jpg' %}" style= "width:200px;height:60px;margin-top:-25px" alt="Cairo Jazz Festival" > 
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -74,9 +102,6 @@
                     <li>
                         <a href="/specialguests">Special Guests</a>
                     </li>
-                    <!--li>
-                        <a href="/previous">Previous Festivals</a>
-                    </li-->
                     <li>
                         <a href="/ourpartners">Our Partners</a>
                     </li>
@@ -152,17 +177,18 @@
 
         <hr>
 
-        <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <p><br><br><br></p>
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
         <div class="container">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                        <li><a href="https://twitter.com/cairojazzfest" target="_blank" style="target-new: tab;"><i class="fa fa-twitter"></i></a>
+                        <li><a href="https://twitter.com/cairojazzfest" target="_blank" style="target-new: tab;"><i class="fa fa-twitter fa-lg"></i></a>
                         </li>
-                        <li><a href="https://www.facebook.com/cairojazzfest" target="_blank" style="target-new: tab;"><i class="fa fa-facebook"></i></a>
+                        <li><a href="https://www.facebook.com/cairojazzfest" target="_blank" style="target-new: tab;"><i class="fa fa-facebook fa-lg"></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-instagram"></i></a>
+                        <li><a href="http://instagram.com/cairojazzfestival/" target="_blank" style="target-new: tab;"><i class="fa fa-instagram fa-lg" ></i></a>
                         </li>
-                        <li><a href="#"><i class="fa fa-youtube"></i></a>
+                        <li><a href="https://www.youtube.com/channel/UCLX5uKKP-ooL6Xoahb23DCg?&ab_channel=cairojazzfestival" target="_blank" style="target-new: tab;"><i class="fa fa-youtube fa-lg"></i></a>
                         </li>
                 </ul>
             </div>
