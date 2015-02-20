@@ -104,8 +104,8 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/program">Program</a>
-                        <!--a href="/staticprogram">Program</a-->
+                        <!--a href="/program">Program</a-->
+                        <a href="/Artists">Artists</a>
                     </li>
                     <!--li>
                         <a href="/specialguests">Special Guests</a>
@@ -148,7 +148,7 @@
             {% else %}
                 <div class="item">
             {% endif %}
-                <a href="{{Picture.PictureLink}}" target="_blank"><img src= "{% static 'Carousel/'|add:Picture.PictureTitle|add:'.jpg' %}" width="100%" hight= "20%"/></a>
+                <!--a href="{{Picture.PictureLink}}" target="_blank"--><img src= "{% static 'Carousel/'|add:Picture.PictureTitle|add:'.jpg' %}" width="100%" hight= "20%"/></a>
                 <div class="carousel-caption">
                     <h2>{{Picture.PictureTitle}}</h2>
                 </div>
@@ -221,6 +221,7 @@
     
 
     <p><br><br><br></p>
+
     <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
         <div class="container">
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

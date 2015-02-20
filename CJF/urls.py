@@ -16,5 +16,6 @@ urlpatterns = patterns('',
 urlpatterns += patterns('django.contrib.flatpages.views',
     url(r'^aboutus/$', 'flatpage', {'url': '/aboutus/'}, name='Cairo Jazz Festival - About Us'),
     url(r'^contactus/$', 'flatpage', {'url': '/contactus/'}, name='Cairo Jazz Festival - Contact Us'),
+    url(r'^Artists/$', 'flatpage', {'url': '/Artists/'}, name='Cairo Jazz Festival - Artists'),
     url(r'^ourpartners/$', 'flatpage', {'url': '/ourpartners/'}, name='Cairo Jazz Festival - Out Partners'),
 )
