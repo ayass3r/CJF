@@ -21,11 +21,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = '<[QaVue"5*T5l+;"9YI;fKMa$K!>9I4dkq1WVPM306n6Z,Y[Bbm)F{7(5{=gAt'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*'] #use * if it acts up '*'
 
 SITE_ID = 2
 
@@ -64,7 +64,7 @@ ROOT_URLCONF = 'CJF.urls'
 
 WSGI_APPLICATION = 'CJF.wsgi.application'
 
-MEDIA_ROOT = '/home/ayass3r/Downloads/CJF/'
+MEDIA_ROOT = '/home/ayass3r/CJF/'
 #MEDIA_ROOT = '/Users/omar/Desktop/CJF/'
 
 # Database
